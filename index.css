@@ -107,12 +107,13 @@ body {
     background-color: white;
     flex-wrap: wrap;
     align-items: center;
+    
 }
       
 .search-input {
-    width: 80%;
+    width: 82%;
     padding: 0;
-    padding-left: 40px; /* Espacio para la lupa */
+    padding-left: 10px; /* Espacio para la lupa */
     border: none;
     height: 40px;
       }
@@ -122,7 +123,8 @@ body {
     font-size: 24px;
     color: #757575;
     border:none;
-      }
+    align-items: center;
+}
 
 .search-bar {
     width: 100%;
@@ -215,8 +217,40 @@ h1 {
   .icons-search {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
+    align-items: center;
   }
- 
+  .search-container .search-icon {
+    font-size: 20px; /* Ajusta el tamaño del icono */
+    color: #888;
+    
+}
+
+.search-container .clear-icon {
+    display: none; /* Oculto por defecto */
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+}
+
+.search-container input:not(:placeholder-shown) ~ .clear-icon {
+    display: block; /* Mostrar cuando el campo no está vacío */
+}
+
+
+.search-input {
+    width: 80%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.clear-icon {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
   
   
