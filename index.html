@@ -4,28 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
+    <link
+      rel="icon"
+      href="C:\Users\nicolaseduardo.gomez\Desktop\google.png"
+      type="image/x-icon"
+    />
+
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
-      <div class="headers">
-        <div class="containers">
-          <a href="#">Gmail</a>
-          <a href="#">Images</a>
-          <div class="menu-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000000"
-            >
-              <path
-                d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"
-              />
-            </svg>
-          </div>
-          <a href="#" class="sign-ins">Sign in</a>
+      <div class="header__container--head">
+        <a href="#" class="header__link">Gmail</a>
+        <a href="#" class="header__link">Images</a>
+        <div class="header__menu-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path
+              d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"
+            />
+          </svg>
+        </div>
+        <div>
+          <a href="#" class="header__link__sign-in">Sign in</a>
         </div>
       </div>
     </header>
@@ -38,8 +44,8 @@
         />
       </div>
 
-      <div class="search-container">
-        <span class="material-icons search-icon">
+      <div class="search-container--searching">
+        <span class="search-container__icon-material-icons">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
@@ -55,16 +61,18 @@
 
         <input
           type="text"
-          class="search-input"
+          class="search-container__input"
           id="search-input"
           placeholder="Search"
         />
-        <span class="clear-icon" id="clear-icon">&times;</span>
+        <span class="search-container__clear-icon" id="clear-icon"
+          >&times;</span
+        >
 
-        <div class="icons-search">
+        <div class="search-container__icon--google">
           <span>
             <svg
-              class="goxjub"
+              class="search-container__icon"
               focusable="false"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +96,7 @@
           </span>
           <span>
             <svg
-              class="Gdd5U"
+              class="search-container__icon"
               focusable="false"
               viewBox="0 0 192 192"
               xmlns="http://www.w3.org/2000/svg"
@@ -117,27 +125,29 @@
         </div>
       </div>
       <script src="script.js"></script>
-      <div class="buttons">
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
+      <div class="container__buttons--center">
+        <button class="container__button">Google Search</button>
+        <button class="container__button">I'm Feeling Lucky</button>
       </div>
-      <h1>Google offered in: Español (Latinoamerica)</h1>
+      <h1 class="container__language">
+        Google offered in: Español (Latinoamerica)
+      </h1>
     </div>
-    <footer>
-      <div class="footer-top">
+    <footer class="footer">
+      <div class="footer__top">
         <p>Colombia</p>
       </div>
-      <div class="footer-container">
-        <div class="footer-left">
-          <a href="#">About</a>
-          <a href="#">Advertising</a>
-          <a href="#">Business</a>
-          <a href="#">How Search works</a>
+      <div class="footer__container--foot">
+        <div class="footer__under">
+          <a href="#" class="footer__link">About</a>
+          <a href="#" class="footer__link">Advertising</a>
+          <a href="#" class="footer__link">Business</a>
+          <a href="#" class="footer__link">How Search works</a>
         </div>
-        <div class="footer-right">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Settings</a>
+        <div class="footer__under">
+          <a href="#" class="footer__link">Privacy</a>
+          <a href="#" class="footer__link">Terms</a>
+          <a href="#" class="footer__link">Settings</a>
         </div>
       </div>
     </footer>
