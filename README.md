@@ -1,7 +1,7 @@
 # Home-Google
 ## Tareas desarrolladas
 - Replicar pagina principal del navegador de Google
-- Aplicar la metodologia BEM en las clases CSS
+- Aplicar la metodologia BEM en las clases CSS3
 - Implementar funciones y eventos con Javascript Vanilla
 
 ## Lenguajes 
